@@ -13,10 +13,8 @@ public class AppConfig {
     }
     @Bean(name="catBean")
     @Scope(value = "prototype")
-    public Cat getCat(String name, String color) {
+    public Cat getCat() {
         Cat cat = new Cat();
-        cat.setName(name);
-        cat.setColor(color);
         return cat;
     }
 }
